@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+body{
+    overflow-y: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    background: rgb(109,156,154);
+background: linear-gradient(0deg, rgba(109,156,154,1) 0%, rgba(79,135,133,1) 100%);
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.parent-block{
+    background-color: #FFBA33;
+    width: 80%;
+    height: 75vh;
+    size: 50%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.block-1{
+        background: #184E57;
+        width: 40rem;
+        transform-origin: bottom left;
+        transform: skew(-10deg, 0deg);
+        position: absolute;
+        left: -8rem;
+        bottom: 0;
+        top:0;
+        display: flex;
+        margin-right: 3rem;
+        justify-content: center;
+        align-items: center;
+        /* height: 100; */
+}
+.block-1 :first-child{
+    position: absolute;
+    margin-top: 0.8rem;
+    background-color: #FBE36D;
+    transform: skew(10deg);
+    width: 9.5rem;
+    height: 12.5rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+img{
+    width: 250px;
+    height: 300px;
+    transform: skew(10deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.block-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    width: 45rem;
+}
+
+.form-block{
+    width: 20rem;
+    height: 18rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+
+
+}
+
+
+.form-head{
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    width: 100%;
+    box-shadow:
+  0px 1.3px 1.8px rgba(0, 0, 0, 0.04),
+  0px 4.5px 6px rgba(0, 0, 0, 0.06),
+  0px 20px 27px rgba(0, 0, 0, 0.1)
+;
+}
+.form-head p{
+    text-transform: uppercase;
+    color: #FFBA33;
+    font-size: medium;
+    font-weight: 700;
+    margin-left: 10px;
+
+}
+.form-head a{
+    text-decoration: none;
+    color: #E4E6E8;
+    font:bold;
+    margin-right: 10px;
+
+}
+.form-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap:1rem;
+}
+
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    text-align: center;
+    color: rgb(215, 215, 215) ;
+ }
+ .password-block{
+    width: 100%;
+    height: 2rem;
+    margin-left: 3.8rem;
+ }
+.input-text, .input-password{
+    width: 80%;
+    height: 2rem;
+    caret-color: #FFBA33;
+    caret: calc(-20deg);
+    border: rgb(215, 215, 215) solid 1px;
+    border-radius: 0.2rem;
+}
+
+.form-footer button{
+    background-color: #1A535C;
+    border-radius: 0.2rem;
+    width: 80%;
+    height: 2.5rem;
+    border: none;
+    margin-top: 3rem;
+    margin-left: 1.9rem;
+    color: white;
+    font-weight: 500;
+
+}
+
+.block-2-footer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-2-footer a{
+    text-decoration: none;
+}
+.block-2-footer :first-child{
+    color: white;
+}
+.block-2-footer :nth-child(2){
+    font-weight: 600;
+    color:#1A535C;
+}
+.container{
+    position: absolute;
+    z-index: 20;
+    transform: rotate(-270deg);
+    margin-left: -93rem;
+
+
+}
+
+.trapezoid {
+    opacity: 0.15;
+	border-bottom: 680px solid #FFBA33;
+    border-left: 280px solid transparent;
+    border-right: 270px solid transparent;
+    height: 0;
+    width: 195px;
+    
+    /* transform: skew(-50deg); */
+
 }
