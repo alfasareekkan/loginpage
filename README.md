@@ -1,11 +1,12 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://github.com/alfasareekkan/loginpage/blob/main/public/Screenshot%20(174).png" >
+
 
 ## Available Scripts
 
 In the project directory, you can run:
-<img src="https://github.com/alfasareekkan/loginpage/blob/main/public/Screenshot%20(174).png" >
 ### `npm start`
 
 Runs the app in the development mode.\
